@@ -19,14 +19,13 @@ if st.button("Submit Review"):
         try:
 
             response = requests.post(
-                "http://127.0.0.1:8000/review",
-                json={
-                    "review": review,
-                    "email": email,
-                    "name": name,
-                    
-                }
-            )
+    "https://review-ai-agent-servam.onrender.com/review",
+    json={
+        "review": review,
+        "email": email,
+        "name": name
+    }
+)
 
             if response.status_code == 200:
 
