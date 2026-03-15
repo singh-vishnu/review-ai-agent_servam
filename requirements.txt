@@ -5,3 +5,5 @@ requests
 langgraph
 langchain
 python-dotenv
+pydantic
+gunicorn
